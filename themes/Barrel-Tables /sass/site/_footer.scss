@@ -1,0 +1,102 @@
+footer#colophon{
+
+	background: #141414;
+    text-align: center;
+    float: left;
+    padding: 1em;
+    width: 100%;
+    nav.navbar{
+		display: flex;
+    	border: 0;
+		margin-bottom:0;
+		background-color:transparent;
+		.nav-logo {
+			float: left;
+			width: 20%;
+			display: flex;
+			align-items: center;
+			align-content: center;
+		}
+		.nav-list {
+			float: left;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			align-content: center;
+			padding: 1em 0;
+			li {
+				a {
+					font-family: 'Montserrat-Regular';
+					text-transform:uppercase;
+					color:#fff;
+					background-color:transparent;
+					font-size:16px;
+					border-right: 1px solid #fff;
+					padding: 0em 1em;
+					
+				}
+				.active {
+					color:#f9f6f3;
+				}
+			}
+			
+		}
+
+		//left logo
+		a.navbar-brand{
+			background: url();
+		    background-size: contain;
+		    background-repeat-x: no-repeat;
+		    width:250px;
+		}
+
+		.navbar-collapse {
+			margin: auto;
+		}
+		
+    }
+    .designed-by {
+        p {
+            color:#fff;
+            a {
+                color:$tan;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+#back2Top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 50px;
+	right: 10px;
+    background-color: $grey_background;
+    color: $grey_header;
+    text-align: center;
+    font-size: 30px;
+	text-decoration: none;
+	
+	box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149);
+	transition:.2s all ease-in-out;
+    border-radius:5px;
+    @include respond-to(handhelds) {
+		bottom:25px;
+		display: none !important;
+    }
+ 
+}
+#back2Top:hover {
+    background-color: #ececec;
+	color: #000;
+	box-shadow:0 1px 3px 0 rgba(60,64,67,0.302), 0 4px 8px 3px rgba(60,64,67,0.149);
+}

@@ -1,0 +1,41 @@
+.single-post {
+    min-height: 90vh;
+
+    .single-post-wrapper {
+        padding-top: 8em;
+    }
+
+    .entry-title {
+        text-align: center;
+        font-size: calc(0.24 * 20vw);
+        @include respond-to (handhelds) {
+            font-size: 40px;
+        }
+        background-size: 100% 15%;
+        background-repeat: no-repeat;
+        background-position-x: 50%;
+        background-position-y: bottom;
+        padding-bottom: .7em;
+        padding-left: .1em;
+        margin-bottom: 1em;
+        text-align: center;
+        width: fit-content;
+        margin: auto;
+    }
+    .img-block {
+        display: flex;
+    }
+
+    .single-post-featured-image {
+        margin: auto;
+        width: 500px;
+        height: 500px;
+        background-size: cover;
+        margin-bottom: 3em;
+    }
+
+    .entry-text {
+        max-width: 800px;
+        margin: auto;
+    }
+}
